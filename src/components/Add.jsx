@@ -71,7 +71,6 @@ const Add = ({setVideoUploadResponse}) => {
         <Modal.Body>
           <div className='border rounded p-3'>
             <FloatingLabel controlId="floatingInputCaption" label="Video Caption" className="mb-3">
-              {/* spread operator is used to get all key:value in the state */}
               <Form.Control onChange={e=>setVideoDetails({...videoDetails,caption:e.target.value})} type="text" placeholder="Video Caption" />
             </FloatingLabel>
             <FloatingLabel controlId="floatingInputUrl" label="Image URL" className="mb-3">
